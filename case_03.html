@@ -9,45 +9,33 @@
     <style>
 
         body>div:nth-child(1) {
-            width: 20vw;
+            width: 18vw;
             aspect-ratio: 1/1;
-            background-color: gray;
+            background-color: transparent;
             border-radius: 100%;
+            border: 1vw solid gray;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             margin: auto;
-            clip-path: circle(16vw at center);
+            z-index: 3;
         }
 
         body>div>div {
-            width: 18vw;
-            aspect-ratio: 1/1;
-            background-color: red;
-            border-radius: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            clip-path: circle(16vw at center);
-        }
-
-        body>div>div>div {
             width: 16vw;
             aspect-ratio: 1/1;
-            background-color: white;
+            background-color: transparent;
             border-radius: 100%;
+            border: 1vw solid red;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             margin: auto;
-            clip-path: circle(16vw at center);
+            z-index: 2;
         }
 
         body>div:nth-child(2) {
@@ -67,6 +55,7 @@
             left: 0;
             top: 34.17vh;
             margin: auto;
+            z-index: 1;
         }
 
         body>div:nth-child(3) {
@@ -86,6 +75,7 @@
             right: 0;
             left: 0;
             margin: auto;
+            z-index: 1;
         }
 
         body>div:nth-child(4) {
@@ -105,6 +95,7 @@
             right: 0;
             left: 0;
             margin: auto;
+            z-index: 1;
         }
 
         body>div:nth-child(5) {
@@ -121,7 +112,7 @@
 </head>
 <body>
 
-<div><div><div></div></div></div>
+<div><div></div></div>
 
 <div>Hello</div>
 <div>Welcome To</div>
